@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🎸%3C/text%3E%3C/svg%3E">
+<title>Cuerda Clave · La tradición sigue sonando</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- 1 · INICIO (los encabezados <header class="nav"> los llena js/main.js) -->
+<main class="v on" id="v1">
+ <header class="nav"></header>
+ <section class="hero1">
+  <h1>LA TRADICIÓN<br>SIGUE SONANDO</h1><p>Agustín Codazzi, Cesar.</p>
+  <div class="row"><button class="pill p-red play">▶ ESCUCHA AHORA</button><button class="pill glass" data-to="v2#hist">● Descubre la historia</button></div>
+  <div class="live"><span>Ahora suena</span><div class="eq"></div></div>
+ </section>
+ <section class="sec" id="g1"><h2><span>GENTE QUE TOCA · Videos</span><a href="#" data-to="v3#gal" style="color:var(--red);font-weight:800">Ver galería</a></h2>
+  <div class="clips">
+   <figure class="vid"><video src="assets/video/javi.mp4" poster="assets/video/javi.jpg" controls playsinline preload="none"></video><figcaption><b>Javi</b><small>Gente que toca</small></figcaption></figure>
+   <figure class="vid"><video src="assets/video/jose.mp4" poster="assets/video/jose.jpg" controls playsinline preload="none"></video><figcaption><b>José</b><small>Gente que toca</small></figcaption></figure>
+   <figure class="vid"><video src="assets/video/nico.mp4" poster="assets/video/nico.jpg" controls playsinline preload="none"></video><figcaption><b>Nico</b><small>Gente que toca</small></figcaption></figure>
+   <figure class="vid"><video src="assets/video/sara.mp4" poster="assets/video/sara.jpg" controls playsinline preload="none"></video><figcaption><b>Sara</b><small>Gente que toca</small></figcaption></figure>
+   <figure class="vid"><video src="assets/video/invitado.mp4" poster="assets/video/invitado.jpg" controls playsinline preload="none"></video><figcaption><b>Músico invitado</b><small>Gente que toca</small></figcaption></figure>
+   <button class="clip g crewc" data-crew><b>Únete al Crew</b><small>Tu video puede estar aquí</small></button>
+  </div></section>
+ <section class="sec" id="f1"><h2><span>ESTADO DEL FESTIVAL</span></h2>
+  <div class="fest"><div><h3>XXXIX Festival de Música Vallenata en Guitarra</h3><div class="cd">14 al 16 de agosto de 2026 · Homenaje a Rafael Oñate Rivero</div><small>Agustín Codazzi, Cesar · Próxima edición: fechas por confirmar</small></div>
+   <div class="row"><button class="pill glass" onclick="window.open('https://www.google.com/maps/search/Parque+de+la+Guitarra+Agustín+Codazzi+Cesar','_blank')">Cómo llegar</button><button class="pill p-red" data-to="v2#hist">Ver historia</button></div></div></section>
+ <section class="sec" id="dl"><h2><span>DESCARGA GRATIS · SI VAS AL FESTIVAL</span></h2>
+  <div class="blk dlb"><div><h3>Póster · Edición especial</h3><p>Un homenaje a las cuerdas que cuentan nuestra historia y mantienen viva la tradición vallenata. Descarga este póster de edición especial y haz que nuestra música siga sonando.</p>
+   <div class="row" style="margin-top:14px"><a class="btn2" href="assets/descargas/poster-edicion-especial.pdf" download>⬇ Descargar PDF</a><button class="btn2" id="pr" style="background:var(--mus);color:var(--ebony)">🖨 Imprimir ahora</button></div></div>
+   <div class="pp-prev" role="img" aria-label="Vista previa del póster edición especial"></div></div></section>
+</main>
+
+<!-- 2 · HISTORIA -->
+<main class="v" id="v2">
+ <header class="nav nav2"></header>
+ <div class="grid" id="hist">
+  <section class="blk b-red"><div class="tx"><h1 class="big">Desde 1987,<br>la guitarra manda</h1><p style="margin-top:12px">Festival de Música Vallenata en Guitarra · Agustín Codazzi, Cesar.</p></div>
+   <div class="tx"><button class="btn2 play">► ESCUCHA AHORA</button><div class="eq" style="margin-top:18px"></div></div><div class="cut" role="img" aria-label="Estatua de guitarristas" style="background-image:url('assets/img/estatua-guitarristas.jpg')"></div></section>
+  <aside class="side">
+   <div class="blk b-mus"><b>♫ Riff del día</b><p>Elige canción y tono</p><button class="btn2 play" style="margin-top:10px">► REPRODUCIR</button></div>
+   <div class="blk b-st" id="dato"><div class="pic" role="img" aria-label="Jóvenes cantando y tocando en la tarima del festival" style="background-image:url('assets/img/tarima-fundacion.jpg')"></div><b>DATO CURIOSO <span id="dn"></span></b><p id="dt"></p><button class="btn2" id="dnx">OTRO DATO →</button></div></aside>
+  <section class="blk tl how"><div><b style="font-family:var(--h)">¿CÓMO NACIÓ?</b><p style="margin-top:8px;max-width:75ch">En julio de 1987, el compositor y folclorista codacense Armando León Quintero Arzuaga propuso crear un encuentro competitivo para guitarristas. Tras no recibir respaldo de Aprocoda, acudió al alcalde Eloy Quintero Martínez, quien impulsó la primera edición: del 14 al 16 de agosto de 1987.</p></div><div class="ph2" role="img" aria-label="Plaza con iglesia" style="background-image:url('assets/img/plaza-iglesia.jpg')"></div></section>
+  <section class="blk tl" id="t2"><b style="font-family:var(--h)">MOMENTOS IMPORTANTES · LÍNEA DE TIEMPO</b>
+   <div class="flt"><button class="on" data-f="all">Todo</button><button data-f="origen">Origen</button><button data-f="hitos">Hitos</button><button data-f="ediciones">Ediciones</button></div>
+   <div class="tli">
+    <div data-t="origen ediciones"><b>1987</b><small>I edición</small>14 al 16 de agosto: nace el festival, impulsado por Armando León Quintero Arzuaga.</div>
+    <div data-t="hitos"><b>2014</b><small>Parque de la Guitarra</small>Se inaugura el escenario emblemático del festival, antes celebrado en la plaza principal.</div>
+    <div data-t="ediciones"><b>2018</b><small>XXXII edición</small>16 al 19 de agosto, tres décadas después de su primera edición.</div>
+    <div data-t="hitos ediciones"><b>2022</b><small>XXXV edición · Patrimonio</small>La Ley 2258 (19 de julio) lo declara Patrimonio Cultural de la Nación.</div>
+    <div data-t="ediciones"><b>2023</b><small>XXXVI edición</small>18, 19 y 20 de agosto.</div>
+    <div data-t="ediciones"><b>2024</b><small>XXXVII edición</small>16 al 18 de agosto, con homenaje póstumo a Hernán Baquero Castro y más de 50 tríos y compositores.</div>
+    <div data-t="ediciones hitos"><b>2025</b><small>XXXVIII edición</small>Homenaje a José de Dios Rincón Navarro y feria con más de 200 emprendedores locales.</div>
+    <div data-t="ediciones"><b>2026</b><small>XXXIX edición</small>14 al 16 de agosto, con homenaje a Rafael Oñate Rivero.</div>
+   </div></section>
+  <div class="strings" style="grid-column:span 12;margin:0"></div>
+  <section class="blk card c1"><div class="pic" role="img" aria-label="Guitarristas" style="background-image:url('assets/img/guitarristas.jpg')"></div><h3>La guitarra protagonista</h3><p>A diferencia de los festivales centrados en el acordeón, aquí mandan la guitarra, la voz y la guacharaca. Toca una nota y escucha un punteo.</p><div class="notes" role="group" aria-label="Notas de guitarra"><button data-note="261.63">DO</button><button data-note="293.66">RE</button><button data-note="329.63">MI</button><button data-note="349.23">FA</button><button data-note="392">SOL</button></div></section>
+  <section class="blk card c2"><div class="pic" role="img" aria-label="Niños tocando guitarra" style="background-image:url('assets/img/ninos-guitarras.jpg')"></div><h3>Los concursos</h3><p>Categorías infantil, juvenil, aficionados y profesional, además de canción inédita.</p><button class="lnk" data-to="v1#g1">Ver gente que toca</button></section>
+  <section class="blk card c3 parque"><div class="pv" role="img" aria-label="Monumento de la guitarra" style="background-image:url('assets/img/monumento-guitarra.jpg')"></div><div class="pt"><div><h3>Parque de la Guitarra</h3><p>Inaugurado en 2014, es el símbolo físico de la identidad musical de Codazzi.</p></div><button class="lnk" data-map>📍 Cómo llegar</button></div></section>
+  <section class="blk tl" style="background:var(--mus)"><b style="font-family:var(--h)">MÁS QUE CONCURSOS</b><p style="margin-top:6px">El festival integra desfiles, muestras gastronómicas y ferias de emprendimiento. <button class="lnk" data-to="v3#gal">Mira las fotos en la galería</button></p></section>
+ </div>
+</main>
+
+<!-- 3 · GALERÍA -->
+<main class="v" id="v3">
+ <header class="nav nav3"></header>
+ <section class="hero3" id="gal">
+  <svg class="wave" viewBox="0 0 800 120" preserveAspectRatio="none" aria-hidden="true"><path d="M-100 60 Q-50 10 0 60 T100 60 T200 60 T300 60 T400 60 T500 60 T600 60 T700 60 T800 60 T900 60"/><path d="M-100 70 Q-50 110 0 70 T100 70 T200 70 T300 70 T400 70 T500 70 T600 70 T700 70 T800 70 T900 70"/></svg>
+  <div class="iso3"></div><h1>GALERÍA DEL FESTIVAL</h1><p>Fotos de la gente que vive la tradición</p>
+  <button class="pill cta3 play">▶ ESCUCHA EL RIFF</button>
+  <div class="eq" style="max-width:520px;margin:28px auto 0"></div></section>
+ <section class="ban" id="ban"><h3>¿Estuviste en el festival? Carga aquí tus fotos</h3><p>Esta es una galería abierta: las fotos que adjuntes quedan en la página junto a las demás.</p>
+  <div class="row"><label class="pill send" id="lf" for="fi">📎 CARGAR FOTOS</label><input type="file" id="fi" accept="image/*" multiple hidden></div>
+  <label class="chk"><input type="checkbox" id="ac"> Acepto los <a href="#" data-tyc>términos y condiciones</a></label>
+  <div id="ok" role="status"></div><small class="hint">Por ahora tus fotos se guardan en este navegador.</small></section>
+ <section class="gal" id="galeria" aria-label="Galería de fotos">
+  <figure><img src="assets/img/iglesia-atardecer.jpg" alt="Atardecer sobre la iglesia de Codazzi"></figure>
+  <figure><img src="assets/img/guitarra-flores.jpg" alt="Guitarra monumental cubierta de flores"></figure>
+  <figure><img src="assets/img/desfile-globos.jpg" alt="Desfile con globos de colores"></figure>
+  <figure><img src="assets/img/trajes-festival.jpg" alt="Grupo con trajes azules decorados con guitarras"></figure>
+  <figure><img src="assets/img/plaza-atardecer.jpg" alt="Plaza y fuentes al atardecer"></figure>
+  <figure><img src="assets/img/concierto-noche.jpg" alt="Concierto nocturno con público"></figure>
+  <figure><img src="assets/img/letrero-codazzi.jpg" alt="Letrero de Agustín Codazzi"></figure>
+  <figure><img src="assets/img/maestro-jovenes.jpg" alt="Maestro con tres jóvenes guitarristas"></figure>
+  <figure><img src="assets/img/estatuas-parque.jpg" alt="Estatuas de guitarristas en un parque"></figure>
+  <figure><img src="assets/img/trio-tarima.jpg" alt="Trío en tarima"></figure>
+ </section>
+</main>
+
+<footer><span class="wm" style="margin:0 auto 8px;background-position:center"></span>© Cuerda Clave · Agustín Codazzi, Cesar · <a href="#" data-tyc>Términos y condiciones</a></footer>
+
+<dialog id="lb"><img alt=""><button class="x" aria-label="Cerrar">×</button></dialog>
+<dialog id="crew"><h3>Únete al Crew Cuerda Clave</h3><p>Déjanos tus datos y recibe primero la información y las experiencias del festival.</p>
+ <div class="fld"><label for="cn">Nombre</label><input id="cn" autocomplete="name" placeholder="Tu nombre"></div>
+ <div class="fld"><label for="ce">Correo</label><input id="ce" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com"></div>
+ <label class="chk"><input type="checkbox" id="cc"> Acepto los <a href="#" data-tyc>términos y condiciones</a></label>
+ <div class="row" style="margin-top:14px"><button class="pill p-red" id="cs">UNIRME AL CREW</button></div><div id="cm" role="status"></div><button class="x" aria-label="Cerrar">×</button></dialog>
+<dialog id="tyc"><h3>Política de Privacidad</h3><p><small>Última actualización: 15 de octubre de 2026</small></p><p>Esta Política de Privacidad describe cómo Cuerda Clave, responsable del sitio web del Festival de Música Vallenata de Guitarra de Codazzi, Cesar, recopila, utiliza, protege y trata los datos personales de los usuarios.</p><p>Al utilizar este sitio web, registrarte, suscribirte, enviar un formulario o comunicarte con nosotros, aceptas esta Política de Privacidad.</p><p class="note"><b>Nota:</b> Este sitio web es un proyecto académico o demostrativo. No representa oficialmente al Festival de Música Vallenata en Guitarra, a la Alcaldía de Agustín Codazzi ni a ninguna entidad organizadora del evento.</p><h4>1. Responsable del tratamiento</h4><p>El responsable del tratamiento de tus datos personales es:</p><p><b>Cuerda Clave</b><br>Correo electrónico: cuerdaclave@gmail.com<br>Instagram: @cuerdaclave<br>Ubicación: Agustín Codazzi, Cesar, Colombia.</p><p>Cuerda Clave administra este sitio web y es responsable de la gestión de los formularios, comunicaciones, contenidos y datos personales recibidos a través de la plataforma.</p><h4>2. Datos que recopilamos</h4><p>Podemos recopilar los siguientes datos cuando utilizas los formularios del sitio:</p><ul><li>Nombre completo.</li><li>Correo electrónico.</li><li>Número de teléfono.</li><li>Ciudad o municipio de residencia.</li><li>Mensaje, comentario, sugerencia o consulta enviada.</li><li>Información relacionada con una inscripción a un concurso, actividad o evento, como categoría de participación, edad o nombre artístico.</li></ul><p>No solicitamos datos sensibles, tales como información médica, credenciales bancarias, contraseñas ni documentos de identidad.</p><h4>3. Finalidad del tratamiento</h4><p>Cuerda Clave utilizará tus datos personales únicamente para:</p><ul><li>Enviarte información sobre el Festival de Música Vallenata de Guitarra de Codazzi, Cesar.</li><li>Responder tus consultas, comentarios o solicitudes.</li><li>Gestionar inscripciones a concursos, actividades o eventos.</li><li>Enviar novedades, programación, artistas invitados y comunicaciones culturales.</li><li>Enviar información promocional relacionada con Cuerda Clave, únicamente si autorizas su envío.</li><li>Mejorar la experiencia de navegación y el funcionamiento del sitio web.</li></ul><h4>4. Consentimiento</h4><p>Al marcar la casilla de aceptación en el formulario de registro o al enviar un formulario de contacto, autorizas a Cuerda Clave para tratar tus datos personales conforme a esta Política de Privacidad.</p><p>Puedes retirar tu consentimiento en cualquier momento escribiendo a cuerdaclavee@gmail.com. El retiro del consentimiento no afectará la licitud del tratamiento realizado antes de dicha solicitud.</p><h4>5. Conservación de los datos</h4><p>Tus datos personales se conservarán únicamente durante el tiempo necesario para cumplir las finalidades descritas en esta política.</p><p>Una vez cumplido el propósito del tratamiento, los datos serán eliminados o anonimizados de manera segura, salvo que deban conservarse por obligaciones legales o para atender reclamaciones.</p><h4>6. Compartición de datos</h4><p>Cuerda Clave no vende, alquila ni comparte tus datos personales con terceros con fines comerciales.</p><p>Tus datos solo podrán compartirse con personas o entidades que colaboren directamente con la gestión del sitio web o del festival, y únicamente cuando sea necesario para:</p><ul><li>Atender tu solicitud.</li><li>Gestionar tu inscripción.</li><li>Enviarte la información que solicitaste.</li><li>Cumplir obligaciones legales aplicables.</li></ul><h4>7. Seguridad de la información</h4><p>Cuerda Clave implementa medidas técnicas y organizativas razonables para proteger tus datos personales contra acceso no autorizado, pérdida, alteración, divulgación o uso indebido.</p><p>Sin embargo, ningún sistema de información es completamente infalible, por lo que te recomendamos no enviar datos sensibles a través de formularios o correos electrónicos.</p><h4>8. Derechos del usuario</h4><p>Como titular de tus datos personales, puedes contactar a Cuerda Clave para:</p><ul><li>Conocer qué datos hemos recopilado sobre ti.</li><li>Solicitar la actualización o corrección de tu información.</li><li>Solicitar la eliminación de tus datos personales.</li><li>Revocar tu autorización para recibir comunicaciones.</li><li>Solicitar información sobre el uso que se ha dado a tus datos.</li><li>Presentar una queja o reclamo relacionado con el tratamiento de tus datos.</li></ul><p>Para ejercer estos derechos, escribe a:<br>Correo electrónico: cuerdaclavee@gmail.com<br>Instagram: @cuerdaclave</p><h4>9. Cookies y tecnologías similares</h4><p>El sitio puede utilizar cookies para recordar preferencias, mejorar la navegación y obtener estadísticas anónimas sobre las visitas.</p><p>Puedes configurar tu navegador para bloquear o eliminar cookies. Ten en cuenta que algunas funciones del sitio podrían no funcionar correctamente si las desactivas.</p><h4>10. Enlaces a redes sociales y sitios externos</h4><p>Este sitio puede contener enlaces al Instagram de Cuerda Clave, así como a otras redes sociales, plataformas de boletería, medios de comunicación o sitios de terceros.</p><p>Cuerda Clave no se responsabiliza por las políticas de privacidad, contenidos ni prácticas de dichos sitios externos. Te recomendamos revisar sus propias políticas antes de compartir información personal.</p><h4>11. Cambios en esta política</h4><p>Cuerda Clave puede actualizar esta Política de Privacidad en cualquier momento para adaptarla a cambios en el sitio web, en los formularios o en la normativa aplicable.</p><p>Los cambios entrarán en vigencia desde su publicación en esta página e indicarán la fecha de la última actualización.</p><h4>12. Contacto</h4><p>Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad, puedes comunicarte con:</p><p><b>Cuerda Clave</b><br>Correo electrónico: cuerdaclavee@gmail.com<br>Instagram: @cuerdaclave<br>Agustín Codazzi, Cesar, Colombia.</p><button class="pill p-red x">Cerrar</button></dialog>
+
+<!-- Póster imprimible (solo se ve al imprimir) -->
+<section id="pp"><img src="assets/img/poster-edicion-especial.jpg" alt="Póster edición especial Cuerda Clave"></section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
